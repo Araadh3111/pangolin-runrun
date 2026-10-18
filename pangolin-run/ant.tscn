@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddet14l0n0gi4"]
 
 [ext_resource type="Script" uid="uid://28bidulm2wrn" path="res://ant.gd" id="1_5tacl"]
-[ext_resource type="Texture2D" uid="uid://bdyexmthehexw" path="res://Assets/Images/Tiles/Characters/tile_0021.png" id="2_q4ieg"]
+[ext_resource type="Texture2D" uid="uid://cadxdoje7vy4k" path="res://Assets(rishu)/Separate/Ant/ant1.png" id="2_5tacl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lrn7f"]
 radius = 14.015865
@@ -48,7 +48,7 @@ script = ExtResource("1_5tacl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=362942638]
 scale = Vector2(3, 3)
-texture = ExtResource("2_q4ieg")
+texture = ExtResource("2_5tacl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500417850]
 position = Vector2(-0.99999994, 3)
