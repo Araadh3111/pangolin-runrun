@@ -31,18 +31,21 @@ theme_override_constants/separation = 16
 
 [node name="Paused" type="Label" parent="VBoxContainer" unique_id=839210001]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("1_hdmo1")
 theme_override_font_sizes/font_size = 64
 text = "PAUSED"
 
 [node name="ResumeButton" type="Button" parent="VBoxContainer" unique_id=1063213723]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.99215686, 0, 1)
 theme_override_fonts/font = ExtResource("1_hdmo1")
 theme_override_font_sizes/font_size = 38
 text = "Resume"
 
 [node name="RestartButton" type="Button" parent="VBoxContainer" unique_id=1500421028]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0, 1)
 theme_override_fonts/font = ExtResource("1_hdmo1")
 theme_override_font_sizes/font_size = 38
 text = "Restart
@@ -50,6 +53,7 @@ text = "Restart
 
 [node name="TitleButton" type="Button" parent="VBoxContainer" unique_id=1259387751]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.8745098, 0, 1)
 theme_override_fonts/font = ExtResource("1_hdmo1")
 theme_override_font_sizes/font_size = 38
 text = "Title Screen
@@ -57,6 +61,7 @@ text = "Title Screen
 
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=236399442]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0, 1)
 theme_override_fonts/font = ExtResource("1_hdmo1")
 theme_override_font_sizes/font_size = 38
 text = "Quit

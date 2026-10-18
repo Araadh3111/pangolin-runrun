@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://cqhtugda2pecl"]
 
-[ext_resource type="Texture2D" uid="uid://ck80in8ml0ubl" path="res://Assets/Images/background.png" id="1_272bh"]
 [ext_resource type="PackedScene" uid="uid://cswynlpcvh3hf" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bx3k6abhe0l4g" path="res://Assets(rishu)/2.png" id="1_kek77"]
 [ext_resource type="Texture2D" uid="uid://rlowuki2b3c3" path="res://Assets/Images/new tile map.png" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://nb6xfj1kmbhh" path="res://goal.tscn" id="2_272bh"]
 [ext_resource type="PackedScene" uid="uid://wwlpv3txmjlp" path="res://tiger.tscn" id="2_lquwl"]
@@ -438,7 +438,7 @@ repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=902439725]
 scale = Vector2(4, 4)
-texture = ExtResource("1_272bh")
+texture = ExtResource("1_kek77")
 centered = false
 
 [node name="Goal" parent="." unique_id=1056111237 instance=ExtResource("2_272bh")]
@@ -461,6 +461,7 @@ position = Vector2(4553, 454)
 position = Vector2(5653, 450)
 
 [node name="PauseMenu" parent="." unique_id=1712947375 instance=ExtResource("4_5vw27")]
+visible = false
 
 [node name="MysteryBlock" parent="." unique_id=998708078 instance=ExtResource("4_272bh")]
 position = Vector2(4209, 322)
