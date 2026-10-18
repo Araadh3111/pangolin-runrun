@@ -7,6 +7,7 @@
 size = Vector2(47, 42)
 
 [node name="Goal" type="Area2D" unique_id=1056111237]
+scale = Vector2(3, 3)
 script = ExtResource("1_0qle8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=507990178]
