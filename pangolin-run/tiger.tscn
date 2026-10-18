@@ -1,17 +1,21 @@
 [gd_scene format=3 uid="uid://wwlpv3txmjlp"]
 
 [ext_resource type="Script" uid="uid://ccqo0n6csdcjv" path="res://tiger.gd" id="1_7qp5q"]
-[ext_resource type="Texture2D" uid="uid://dkgyygd1jmdfn" path="res://Assets(SIDDAK)/sprites/shush.png" id="2_7qp5q"]
+[ext_resource type="Texture2D" uid="uid://bk4oqm4vmyih4" path="res://Assets(SIDDAK)/sprites/1.png" id="2_7qp5q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_addsc"]
 atlas = ExtResource("2_7qp5q")
-region = Rect2(0, 243, 81, 81)
+region = Rect2(0, 252, 82, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05t28"]
 atlas = ExtResource("2_7qp5q")
-region = Rect2(81, 243, 81, 81)
+region = Rect2(82, 252, 82, 42)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_yyefr"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaat5"]
+atlas = ExtResource("2_7qp5q")
+region = Rect2(164, 252, 82, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ocdln"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -19,10 +23,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_05t28")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aaat5")
 }],
 "loop": 1,
 "name": &"default",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
@@ -35,9 +42,9 @@ size = Vector2(143, 127)
 script = ExtResource("1_7qp5q")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=477755396]
-position = Vector2(-31.000004, 24)
+position = Vector2(-32, -2)
 scale = Vector2(2.679012, 2.4444447)
-sprite_frames = SubResource("SpriteFrames_yyefr")
+sprite_frames = SubResource("SpriteFrames_ocdln")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113045639]
