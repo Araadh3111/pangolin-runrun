@@ -50,7 +50,57 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 | Sprint | `Shift` |
 | Restart (after winning) | `R` |
 
+--- 
+
+## Menus
+
+### Start screen
+The game now opens on an animated title screen (`start_screen.tscn`, the main scene). The desert scrolls in the background while the pangolin runs and a tiger chases her. Music fades in when it loads.
+
+| Button | What it does |
+| --- | --- |
+| **PLAY** | Starts Level 1 (Desert) |
+| **LEVEL 2** | Jumps straight to Level 2 (Tunnel) |
+| **QUIT** | Closes the game |
+
+Pressing `Space` on the title screen also starts Level 1.
+
+### Pause menu
+Press `Esc` during Level 1 to pause.
+
+| Button | What it does |
+| --- | --- |
+| **Resume** | Back to the game |
+| **Restart** | Restarts the level |
+| **Title** | Goes back to the start screen |
+| **Quit** | Closes the game |
+
 ---
+
+## Levels
+
+| Level | Scene | What's in it |
+| --- | --- | --- |
+| **1 - Desert** | `main.tscn` | 5 tigers, 4 ants, 1 mystery block |
+| **2 - Tunnel** | `level_2.tscn` | 6 tigers, 4 ants, 2 mystery blocks, new tunnel background and tiles |
+
+Reaching the goal in Level 1 shows **"Level Complete!"** and moves you to Level 2 after 2 seconds. Beating Level 2 shows **"You Win!"**, and pressing `R` takes you back to the title screen.
+
+---
+
+## Sound
+
+- Jump, ant pickup, power-up and level-complete sounds (`Assets/Audio/`)
+- Background music and button sounds on the start screen
+
+---
+
+## Animation
+
+- The pangolin has a 3-frame walk cycle and stops animating when standing still
+- Tigers have a 3-frame walk cycle
+- Mystery blocks shimmer until you hit them
+- Ants use a custom pixel-art sprite (`Assets(rishu)/Separate/Ant/ant1.png`)
 
 ## Running the project
 
