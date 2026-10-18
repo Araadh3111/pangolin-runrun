@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://wwlpv3txmjlp"]
+
+[ext_resource type="Texture2D" uid="uid://dhr26il4g8klj" path="res://Assets/Images/tuger.png" id="1_xkfif"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
+size = Vector2(43.666668, 37.666668)
+
+[node name="Tiger" type="CharacterBody2D" unique_id=272628259]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=107185269]
+scale = Vector2(3, 3)
+texture = ExtResource("1_xkfif")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113045639]
+position = Vector2(4.5, -2.5000038)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_lrn7f")

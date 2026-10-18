@@ -1,19 +1,33 @@
 [gd_scene format=3 uid="uid://cswynlpcvh3hf"]
 
-[ext_resource type="Texture2D" uid="uid://hlxlbpun8y54" path="res://icon.svg" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://edtpg6ttb5k6" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://c2frhoygqbpdu" path="res://Assets/Images/Pangolin.png" id="2_onrkg"]
+[ext_resource type="FontFile" path="res://Assets/Images/Tiles/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf-fe5c14b20e62db767ede6d5f37f39902.fontdata" id="3_i3pqv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lrn7f"]
-radius = 85.0
-height = 176.0
+radius = 39.96675
+height = 111.971725
 
-[node name="Player" type="CharacterBody2D" unique_id=1267910415]
+[node name="Player" type="CharacterBody2D" unique_id=1267910415 groups=["player"]]
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=641148632]
-texture = ExtResource("1_4flbx")
+scale = Vector2(5, 5)
+texture = ExtResource("2_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012487333]
+position = Vector2(-5, 16.000002)
+rotation = -1.5772781
 shape = SubResource("CapsuleShape2D_lrn7f")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1944744794]
+limit_left = -30
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1026902487]
+
+[node name="AntLabel" type="Label" parent="CanvasLayer" unique_id=271797322]
+offset_right = 57.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_i3pqv")
+theme_override_font_sizes/font_size = 32
+text = "Ants:  0"
