@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhr26il4g8klj"
-path="res://.godot/imported/tuger.png-330f6bfe6867d84a836093dcbe76a0f3.ctex"
+uid="uid://drl7667klem0q"
+path="res://.godot/imported/2.png-26d0ee233395be29aaa4279ef1fd7a79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/tuger.png"
-dest_files=["res://.godot/imported/tuger.png-330f6bfe6867d84a836093dcbe76a0f3.ctex"]
+source_file="res://Assets(rishu)/2.png"
+dest_files=["res://.godot/imported/2.png-26d0ee233395be29aaa4279ef1fd7a79.ctex"]
 
 [params]
 
