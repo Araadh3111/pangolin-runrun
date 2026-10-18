@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pangolin Run"
-run/main_scene="uid://cqhtugda2pecl"
+run/main_scene="uid://dx21q6dlw8edw"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

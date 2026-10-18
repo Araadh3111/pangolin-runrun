@@ -34,12 +34,17 @@ func die() -> void:
 	get_tree().reload_current_scene()
 
 
-func win() -> void:
+func win(next_level: String = "") -> void:
 	if won:
 		return
 	won = true
-	$CanvasLayer/WinLabel.text = "You Win!\nAnts: " + str(ants) + "\nPress R to restart"
 	$CanvasLayer/WinLabel.visible = true
+	if next_level != "":
+		$CanvasLayer/WinLabel.text = "Level Complete!\nAnts: " + str(ants)
+		await get_tree().create_timer(2.0).timeout
+		get_tree().change_scene_to_file(next_level)
+	else:
+		$CanvasLayer/WinLabel.text = "You Win!\nAnts: " + str(ants) + "\nPress R for title"
 
 
 func power_up() -> void:
@@ -64,7 +69,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 		move_and_slide()
 		if Input.is_action_just_pressed("restart"):
-			get_tree().reload_current_scene()
+			get_tree().change_scene_to_file("res://start_screen.tscn")
 		return
 
 	# Jump
