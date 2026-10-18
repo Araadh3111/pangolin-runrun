@@ -1,8 +1,8 @@
 # Pangolin run
 
-A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* games, except the hero is a **pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
+A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* games, except the hero is a **Pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
 
-Build ure speed up collect buffs along the way defeat the tigers, collect ants and move up the levels by collecting gems
+Build your speed up by collecting buffs along the way to defeat the tigers, collect ants and move up the levels by collecting gems!
 
 ---
 ## Image Section
