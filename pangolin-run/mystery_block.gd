@@ -9,6 +9,7 @@ var sprite_start_y = 0.0
 
 func _ready() -> void:
 	sprite_start_y = $Sprite2D.position.y
+	$Sprite2D.play("default")
 	$BumpZone.body_entered.connect(_on_bump_zone_body_entered)
 
 
