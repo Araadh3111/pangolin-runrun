@@ -25,6 +25,7 @@ func _ready() -> void:
 
 func collect_ant() -> void:
 	ants += 1
+	$AntSound.play()
 	$CanvasLayer/AntLabel.text = "Ants: " + str(ants)
 
 
@@ -38,6 +39,7 @@ func win(next_level: String = "") -> void:
 	if won:
 		return
 	won = true
+	$WinSound.play()
 	$CanvasLayer/WinLabel.visible = true
 	if next_level != "":
 		$CanvasLayer/WinLabel.text = "Level Complete!\nAnts: " + str(ants)
@@ -49,6 +51,7 @@ func win(next_level: String = "") -> void:
 
 func power_up() -> void:
 	powered = true
+	$PowerSound.play()
 	$Sprite2D.sprite_frames = ball_frames
 	$PowerTimer.start()
 	$Sprite2D.frame = 0
@@ -75,6 +78,7 @@ func _physics_process(delta: float) -> void:
 	# Jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$JumpSound.play()
 	if Input.is_action_just_released("jump") and velocity.y < 0:
 		velocity.y *= 0.5
 

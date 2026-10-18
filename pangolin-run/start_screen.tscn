@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://lgb8ggyu6eum" path="res://start_screen.gd" id="1_afy8x"]
 [ext_resource type="Texture2D" uid="uid://ck80in8ml0ubl" path="res://Assets/Images/background.png" id="1_pevhg"]
 [ext_resource type="FontFile" path="res://Assets/Images/Tiles/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf-fe5c14b20e62db767ede6d5f37f39902.fontdata" id="2_afy8x"]
+[ext_resource type="AudioStream" uid="uid://b55bg3227fli1" path="res://Assets/Audio/game_start.wav" id="4_k1na2"]
 
 [node name="StartScreen" type="Control" unique_id=150326901]
 layout_mode = 3
@@ -60,3 +61,26 @@ bbcode_enabled = true
 text = "[center][pulse freq=0.5 color=#ffffff40 ease=-2]Press Space to start[/pulse][/center]"
 fit_content = true
 scroll_active = false
+
+[node name="Controls" type="Label" parent="." unique_id=1396089365]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_afy8x")
+theme_override_font_sizes/font_size = 24
+text = "A / D  or  ← →   Move
+Space            Jump (hold to jump higher)
+Shift            Sprint
+Hit blocks from below for a power-up!"
+
+[node name="StartSound" type="AudioStreamPlayer2D" parent="." unique_id=548162354]
+stream = ExtResource("4_k1na2")
