@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://cqhtugda2pecl"]
 
-[ext_resource type="Texture2D" uid="uid://di51ng8c3fhe8" path="res://Assets/Images/Background.jpg" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://ck80in8ml0ubl" path="res://Assets/Images/background.png" id="1_272bh"]
 [ext_resource type="PackedScene" uid="uid://cswynlpcvh3hf" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://rlowuki2b3c3" path="res://Assets/Images/new tile map.png" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://nb6xfj1kmbhh" path="res://goal.tscn" id="2_272bh"]
@@ -293,11 +293,11 @@ sources/1 = SubResource("TileSetAtlasSource_lquwl")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1705544503]
 scroll_scale = Vector2(0.2, 0)
-repeat_size = Vector2(1156, 0)
+repeat_size = Vector2(972, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=902439725]
 scale = Vector2(3, 3)
-texture = ExtResource("1_0xm2m")
+texture = ExtResource("1_272bh")
 centered = false
 
 [node name="Goal" parent="." unique_id=1056111237 instance=ExtResource("2_272bh")]
