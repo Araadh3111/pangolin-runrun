@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://cflepah8leqsi" path="res://Assets/Images/bg2.png" id="1_7dov7"]
 [ext_resource type="PackedScene" uid="uid://nb6xfj1kmbhh" path="res://goal.tscn" id="2_7dov7"]
 [ext_resource type="PackedScene" uid="uid://wwlpv3txmjlp" path="res://tiger.tscn" id="3_ehv2h"]
+[ext_resource type="PackedScene" uid="uid://l2lfc5ql6qku" path="res://player_level2.tscn" id="4_7dov7"]
 [ext_resource type="PackedScene" uid="uid://yucg10o2idqv" path="res://mystery_block.tscn" id="4_15wb7"]
 [ext_resource type="Texture2D" uid="uid://lhoh2qdufpnp" path="res://Assets/Images/Gretest tile.png" id="5_7dov7"]
 [ext_resource type="Texture2D" uid="uid://rlowuki2b3c3" path="res://Assets/Images/new tile map.png" id="5_eoq84"]
-[ext_resource type="PackedScene" uid="uid://cswynlpcvh3hf" path="res://player.tscn" id="6_yl73a"]
 [ext_resource type="PackedScene" uid="uid://ddet14l0n0gi4" path="res://ant.tscn" id="7_xbcdb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ehv2h"]
@@ -410,6 +410,9 @@ position = Vector2(3754, 454)
 [node name="Tiger5" parent="." unique_id=500902026 instance=ExtResource("3_ehv2h")]
 position = Vector2(5653, 450)
 
+[node name="Player" parent="." unique_id=1267910415 instance=ExtResource("4_7dov7")]
+position = Vector2(88, 419)
+
 [node name="MysteryBlock" parent="." unique_id=998708078 instance=ExtResource("4_15wb7")]
 position = Vector2(1088, 392)
 
@@ -426,9 +429,6 @@ position = Vector2(-300, -1000)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAtABoAAAAJAAAAAAAwABgAAAAJAAAAAAAxABgAAAAJAAAAAAAyABgAAAAJAAAAAAA1ABYAAAAJAAAAAAA3ABYAAAAJAAAAAAA2ABYAAAAJAAAAAAAsABoAAAAJAAAAAAArABoAAAAJAAAAAAA=")
 tile_set = SubResource("TileSet_lrn7f")
-
-[node name="Player" parent="." unique_id=1267910415 instance=ExtResource("6_yl73a")]
-position = Vector2(86, 422)
 
 [node name="Ant1" parent="." unique_id=1335012122 instance=ExtResource("7_xbcdb")]
 position = Vector2(2103, 371)
