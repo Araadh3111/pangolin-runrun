@@ -33,10 +33,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
-size = Vector2(46.666668, 35.333332)
+size = Vector2(39.333336, 35.333332)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiplf"]
-size = Vector2(137, 125)
+size = Vector2(143, 127)
 
 [node name="Tiger" type="CharacterBody2D" unique_id=272628259]
 script = ExtResource("1_7qp5q")
@@ -48,14 +48,14 @@ sprite_frames = SubResource("SpriteFrames_ocdln")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113045639]
-position = Vector2(-3.999999, 0.99999857)
+position = Vector2(-2.000001, 0.99999857)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_lrn7f")
 
 [node name="HitBox" type="Area2D" parent="." unique_id=11473689]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=61049443]
-position = Vector2(4.5, 0.5)
+position = Vector2(3, -1)
 shape = SubResource("RectangleShape2D_xiplf")
 
 [node name="EdgeCheck" type="RayCast2D" parent="." unique_id=694495568]
