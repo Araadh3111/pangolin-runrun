@@ -81,7 +81,7 @@ func _ready():
 	var box = VBoxContainer.new()
 	box.add_theme_constant_override("separation", 14)
 	add_child(box)
-	for item in [["PLAY", "res://main.tscn"], ["LEVEL 2", "res://level_2.tscn"], ["QUIT", ""]]:
+	for item in [["PLAY", "res://main.tscn"], ["LEVEL 2", "res://level_2.tscn"], ["LEVEL 3", "res://level_3.tscn"], ["QUIT", ""]]:
 		var b = Button.new()
 		b.text = item[0]
 		b.custom_minimum_size = Vector2(300, 52)

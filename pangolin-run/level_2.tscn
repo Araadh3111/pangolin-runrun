@@ -896,7 +896,7 @@ sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 sources/1 = SubResource("TileSetAtlasSource_lquwl")
 sources/2 = SubResource("TileSetAtlasSource_yl73a")
 
-[node name="Main" type="Node2D" unique_id=312245494]
+[node name="Main2" type="Node2D" unique_id=312245494]
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=1705544503]
 scroll_scale = Vector2(0.2, 0)
@@ -910,6 +910,7 @@ centered = false
 
 [node name="Goal" parent="." unique_id=1056111237 instance=ExtResource("2_7dov7")]
 position = Vector2(6587, 393)
+next_level = "uid://ck0nauld4hkip"
 
 [node name="Tiger" parent="." unique_id=272628259 instance=ExtResource("3_ehv2h")]
 position = Vector2(1951, 470)
