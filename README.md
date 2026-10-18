@@ -8,7 +8,8 @@ Build your speed up by collecting buffs along the way to defeat the tigers, coll
 ## Image Section
 
 ### Start Menu
-<img width="1917" height="1198" alt="Screenshot 2026-10-19 045302" src="https://github.com/user-attachments/assets/7eab2dd4-a896-47ee-956a-f576651d91f6" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 22 AM" src="https://github.com/user-attachments/assets/46eb7d60-9692-445a-9f67-084435e53a71" />
+
 
 ### Pause Menu
 <img width="1917" height="1198" alt="Screenshot 2026-10-19 045312" src="https://github.com/user-attachments/assets/4c86cce3-5fe1-4b49-aadd-df2044d4d8be" />
@@ -28,6 +29,11 @@ Build your speed up by collecting buffs along the way to defeat the tigers, coll
 
 <img width="1172" height="667" alt="image" src="https://github.com/user-attachments/assets/32ef4da5-1a01-4068-9387-8572f68fd55b" />
 
+### Cherry Blossom (3rd Level)(Extremely hard)
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 27 AM" src="https://github.com/user-attachments/assets/205c2415-dffd-42e2-8f62-250a01fed0e0" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 56 AM" src="https://github.com/user-attachments/assets/7f58f151-c507-4ed7-b408-17c631391497" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 58 AM" src="https://github.com/user-attachments/assets/e35bba9d-078f-40a5-9f0d-15377b15a61a" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 58 28 AM" src="https://github.com/user-attachments/assets/9364d71a-1733-4b17-9cf7-82bbe369ccd3" />
 
 ---
 ## Gameplay
