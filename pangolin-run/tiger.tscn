@@ -1,32 +1,54 @@
 [gd_scene format=3 uid="uid://wwlpv3txmjlp"]
 
 [ext_resource type="Script" uid="uid://ccqo0n6csdcjv" path="res://tiger.gd" id="1_7qp5q"]
-[ext_resource type="Texture2D" uid="uid://dhr26il4g8klj" path="res://Assets/Images/tuger.png" id="1_xkfif"]
+[ext_resource type="Texture2D" uid="uid://dkgyygd1jmdfn" path="res://Assets(SIDDAK)/sprites/shush.png" id="2_7qp5q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_addsc"]
+atlas = ExtResource("2_7qp5q")
+region = Rect2(0, 243, 81, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05t28"]
+atlas = ExtResource("2_7qp5q")
+region = Rect2(81, 243, 81, 81)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yyefr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_addsc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05t28")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
-size = Vector2(41, 30.666666)
+size = Vector2(46.666668, 35.333332)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiplf"]
-size = Vector2(151, 127)
-size = Vector2(117, 91)
+size = Vector2(133, 106)
 
 [node name="Tiger" type="CharacterBody2D" unique_id=272628259]
 script = ExtResource("1_7qp5q")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=107185269]
-scale = Vector2(3, 3)
-texture = ExtResource("1_xkfif")
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=477755396]
+position = Vector2(-31.000004, 24)
+scale = Vector2(2.679012, 2.4444447)
+sprite_frames = SubResource("SpriteFrames_yyefr")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113045639]
-position = Vector2(4.500003, 7.999999)
+position = Vector2(-3.999999, 0.99999857)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_lrn7f")
 
 [node name="HitBox" type="Area2D" parent="." unique_id=11473689]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=61049443]
-position = Vector2(5.5, -3.5)
-position = Vector2(3.5, 5.5)
+position = Vector2(3.5, 0)
 shape = SubResource("RectangleShape2D_xiplf")
 
 [node name="EdgeCheck" type="RayCast2D" parent="." unique_id=694495568]

@@ -15,7 +15,10 @@ func _physics_process(delta: float) -> void:
 		
 	velocity.x = direction*SPEED
 	
-	
+	if direction != 0:
+		$Sprite2D.play()
+	else:
+		$Sprite2D.stop()
 	
 	move_and_slide()
 func update_facing()->void:

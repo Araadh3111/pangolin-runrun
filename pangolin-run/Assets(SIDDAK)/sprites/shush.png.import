@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkgyygd1jmdfn"
-path="res://.godot/imported/shush.png-1ec16875f889d5ee6cdb11eb72e67097.ctex"
+path="res://.godot/imported/shush.png-d98b1dfeca7e1e8e0e47eb1599502826.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/shush.png"
-dest_files=["res://.godot/imported/shush.png-1ec16875f889d5ee6cdb11eb72e67097.ctex"]
+source_file="res://Assets(SIDDAK)/sprites/shush.png"
+dest_files=["res://.godot/imported/shush.png-d98b1dfeca7e1e8e0e47eb1599502826.ctex"]
 
 [params]
 
