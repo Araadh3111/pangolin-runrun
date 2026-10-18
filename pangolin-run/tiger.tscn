@@ -7,8 +7,7 @@
 size = Vector2(41, 30.666666)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiplf"]
-size = Vector2(151, 127)
-size = Vector2(117, 91)
+size = Vector2(137, 125)
 
 [node name="Tiger" type="CharacterBody2D" unique_id=272628259]
 script = ExtResource("1_7qp5q")
@@ -25,8 +24,7 @@ shape = SubResource("RectangleShape2D_lrn7f")
 [node name="HitBox" type="Area2D" parent="." unique_id=11473689]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=61049443]
-position = Vector2(5.5, -3.5)
-position = Vector2(3.5, 5.5)
+position = Vector2(4.5, 0.5)
 shape = SubResource("RectangleShape2D_xiplf")
 
 [node name="EdgeCheck" type="RayCast2D" parent="." unique_id=694495568]
