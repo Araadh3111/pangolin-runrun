@@ -1,41 +1,42 @@
 [gd_scene format=3 uid="uid://wwlpv3txmjlp"]
 
 [ext_resource type="Script" uid="uid://ccqo0n6csdcjv" path="res://tiger.gd" id="1_7qp5q"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7qp5q"]
-atlas = ExtResource("2_7qp5q")
-region = Rect2(0, 252, 82, 42)
+[ext_resource type="Texture2D" uid="uid://qbaprk0vgtqb" path="res://Assets(SIDDAK)/sprites/Tuger.png" id="2_7qp5q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_addsc"]
 atlas = ExtResource("2_7qp5q")
-region = Rect2(82, 252, 82, 42)
+region = Rect2(132, 0, 66, 42)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_05t28"]
 atlas = ExtResource("2_7qp5q")
-region = Rect2(164, 252, 82, 42)
+region = Rect2(66, 0, 66, 42)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_272bh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaat5"]
+atlas = ExtResource("2_7qp5q")
+region = Rect2(0, 0, 66, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pj00s"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7qp5q")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_addsc")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_05t28")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aaat5")
 }],
 "loop": 1,
 "name": &"default",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
 size = Vector2(39.333336, 35.333332)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xiplf"]
-size = Vector2(143, 127)
+size = Vector2(169.5, 127)
 
 [node name="Tiger" type="CharacterBody2D" unique_id=272628259]
 script = ExtResource("1_7qp5q")
@@ -43,8 +44,9 @@ script = ExtResource("1_7qp5q")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=477755396]
 position = Vector2(-32, -2)
 scale = Vector2(2.5, 2.281)
-sprite_frames = SubResource("SpriteFrames_272bh")
+sprite_frames = SubResource("SpriteFrames_pj00s")
 autoplay = "default"
+frame_progress = 0.35399085
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113045639]
 position = Vector2(-2.000001, 0.99999857)
@@ -54,7 +56,7 @@ shape = SubResource("RectangleShape2D_lrn7f")
 [node name="HitBox" type="Area2D" parent="." unique_id=11473689]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=61049443]
-position = Vector2(3, -1)
+position = Vector2(-10.25, -1)
 shape = SubResource("RectangleShape2D_xiplf")
 
 [node name="EdgeCheck" type="RayCast2D" parent="." unique_id=694495568]
