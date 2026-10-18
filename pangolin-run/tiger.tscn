@@ -1,11 +1,16 @@
 [gd_scene format=3 uid="uid://wwlpv3txmjlp"]
 
+[ext_resource type="Script" uid="uid://ccqo0n6csdcjv" path="res://tiger.gd" id="1_7qp5q"]
 [ext_resource type="Texture2D" uid="uid://dhr26il4g8klj" path="res://Assets/Images/tuger.png" id="1_xkfif"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
 size = Vector2(43.666668, 37.666668)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xiplf"]
+size = Vector2(140, 123)
+
 [node name="Tiger" type="CharacterBody2D" unique_id=272628259]
+script = ExtResource("1_7qp5q")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=107185269]
 scale = Vector2(3, 3)
@@ -15,3 +20,15 @@ texture = ExtResource("1_xkfif")
 position = Vector2(4.5, -2.5000038)
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_lrn7f")
+
+[node name="HitBox" type="Area2D" parent="." unique_id=11473689]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox" unique_id=61049443]
+position = Vector2(4, -5.5)
+shape = SubResource("RectangleShape2D_xiplf")
+
+[node name="EdgeCheck" type="RayCast2D" parent="." unique_id=694495568]
+position = Vector2(-50, 4)
+target_position = Vector2(0, 100)
+
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]

@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bi8ky8ihgpicd"]
+
+[ext_resource type="Script" uid="uid://xo55cj7chm38" path="res://termite.gd" id="1_whog0"]
+[ext_resource type="Texture2D" uid="uid://cle7jjiisf8ur" path="res://Assets/Images/Tiles/tile_0028.png" id="2_xxvnh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lrn7f"]
+radius = 14.015865
+
+[sub_resource type="Animation" id="Animation_5tacl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_q4ieg"]
+resource_name = "bob"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -6), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2f0xw"]
+_data = {
+&"RESET": SubResource("Animation_5tacl"),
+&"bob": SubResource("Animation_q4ieg")
+}
+
+[node name="Termite" type="Area2D" unique_id=881935649]
+script = ExtResource("1_whog0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=362942638]
+scale = Vector2(3, 3)
+texture = ExtResource("2_xxvnh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=500417850]
+position = Vector2(-0.99999994, 3)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_lrn7f")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=623053849]
+libraries/ = SubResource("AnimationLibrary_2f0xw")
+autoplay = &"bob"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

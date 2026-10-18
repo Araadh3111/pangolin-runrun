@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://nb6xfj1kmbhh"]
+
+[ext_resource type="Script" uid="uid://ba3v5xns2hjuk" path="res://goal.gd" id="1_0qle8"]
+[ext_resource type="Texture2D" uid="uid://8ckbwu5kespe" path="res://Assets/Images/Tiles/tile_0067.png" id="1_6k3qi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrn7f"]
+size = Vector2(47, 42)
+
+[node name="Goal" type="Area2D" unique_id=1056111237]
+script = ExtResource("1_0qle8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=507990178]
+scale = Vector2(3, 3)
+texture = ExtResource("1_6k3qi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1991111100]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_lrn7f")

@@ -31,3 +31,14 @@ offset_bottom = 23.0
 theme_override_fonts/font = ExtResource("3_i3pqv")
 theme_override_font_sizes/font_size = 32
 text = "Ants:  0"
+
+[node name="WinLabel" type="Label" parent="CanvasLayer" unique_id=1449099458]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("3_i3pqv")
+theme_override_font_sizes/font_size = 64
+
+[node name="PowerTimer" type="Timer" parent="." unique_id=1674024342]
+wait_time = 3.0
+one_shot = true
