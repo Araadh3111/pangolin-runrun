@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cswynlpcvh3hf"]
+
+[ext_resource type="Texture2D" uid="uid://hlxlbpun8y54" path="res://icon.svg" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lrn7f"]
+radius = 85.0
+height = 176.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1267910415]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=641148632]
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012487333]
+shape = SubResource("CapsuleShape2D_lrn7f")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1944744794]
