@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+##jnnwneoinewofnewnf##
 const JUMP_VELOCITY = -600.0
 const WALK_SPEED = 250
 const SPRINT_SPEED = 450

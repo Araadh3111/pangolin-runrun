@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhr26il4g8klj"
-path="res://.godot/imported/tuger.png-330f6bfe6867d84a836093dcbe76a0f3.ctex"
+uid="uid://bqowi0psmr8hu"
+path="res://.godot/imported/boxes.png-e1e382a103907b6b6e74059d12f229bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/tuger.png"
-dest_files=["res://.godot/imported/tuger.png-330f6bfe6867d84a836093dcbe76a0f3.ctex"]
+source_file="res://Assets(rishu)/Separate/Mystery Box/boxes.png"
+dest_files=["res://.godot/imported/boxes.png-e1e382a103907b6b6e74059d12f229bc.ctex"]
 
 [params]
 

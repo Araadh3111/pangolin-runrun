@@ -34,8 +34,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lrn7f"]
-radius = 31.979881
-height = 153.9838
+radius = 23.993017
+height = 132.02316
 
 [node name="Player" type="CharacterBody2D" unique_id=1267910415 groups=["player"]]
 script = ExtResource("1_onrkg")
@@ -48,7 +48,7 @@ autoplay = "default"
 frame_progress = 0.14244609
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2012487333]
-position = Vector2(-11.000002, 16)
+position = Vector2(-6, 15.000001)
 rotation = -1.5772781
 shape = SubResource("CapsuleShape2D_lrn7f")
 
