@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://nb6xfj1kmbhh" path="res://goal.tscn" id="2_272bh"]
 [ext_resource type="PackedScene" uid="uid://wwlpv3txmjlp" path="res://tiger.tscn" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://ddet14l0n0gi4" path="res://ant.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cmgwpdcqp04lk" path="res://pause_menu.tscn" id="4_5vw27"]
 [ext_resource type="PackedScene" uid="uid://yucg10o2idqv" path="res://mystery_block.tscn" id="4_272bh"]
 [ext_resource type="Texture2D" uid="uid://d07pfqoaby5i5" path="res://Assets(rishu)/1.png" id="6_5vw27"]
 
@@ -458,6 +459,8 @@ position = Vector2(4553, 454)
 
 [node name="Tiger5" parent="." unique_id=500902026 instance=ExtResource("2_lquwl")]
 position = Vector2(5653, 450)
+
+[node name="PauseMenu" parent="." unique_id=1712947375 instance=ExtResource("4_5vw27")]
 
 [node name="MysteryBlock" parent="." unique_id=998708078 instance=ExtResource("4_272bh")]
 position = Vector2(4209, 322)

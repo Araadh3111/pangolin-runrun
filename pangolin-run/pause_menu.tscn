@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cmgwpdcqp04lk"]
+
+[ext_resource type="FontFile" path="res://Assets/Images/Tiles/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf-fe5c14b20e62db767ede6d5f37f39902.fontdata" id="1_hdmo1"]
+[ext_resource type="Script" uid="uid://blxc5y03xiw0q" path="res://pause_menu.gd" id="1_nwcfo"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1712947375]
+process_mode = 3
+script = ExtResource("1_nwcfo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=243477816]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.49803922)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=630240702]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Paused" type="Label" parent="VBoxContainer" unique_id=839210001]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hdmo1")
+theme_override_font_sizes/font_size = 64
+text = "PAUSED"
+
+[node name="ResumeButton" type="Button" parent="VBoxContainer" unique_id=1063213723]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hdmo1")
+theme_override_font_sizes/font_size = 38
+text = "Resume"
+
+[node name="RestartButton" type="Button" parent="VBoxContainer" unique_id=1500421028]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hdmo1")
+theme_override_font_sizes/font_size = 38
+text = "Restart
+"
+
+[node name="TitleButton" type="Button" parent="VBoxContainer" unique_id=1259387751]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hdmo1")
+theme_override_font_sizes/font_size = 38
+text = "Title Screen
+"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=236399442]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_hdmo1")
+theme_override_font_sizes/font_size = 38
+text = "Quit
+"
