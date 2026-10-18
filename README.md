@@ -33,6 +33,7 @@ Build your speed up by collecting buffs along the way to defeat the tigers, coll
 <img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 27 AM" src="https://github.com/user-attachments/assets/205c2415-dffd-42e2-8f62-250a01fed0e0" />
 <img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 56 AM" src="https://github.com/user-attachments/assets/7f58f151-c507-4ed7-b408-17c631391497" />
 <img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 58 AM" src="https://github.com/user-attachments/assets/e35bba9d-078f-40a5-9f0d-15377b15a61a" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 5 03 53 AM" src="https://github.com/user-attachments/assets/a3ba6792-9f53-4209-8ca4-c8440e345b6f" />
 <img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 58 28 AM" src="https://github.com/user-attachments/assets/9364d71a-1733-4b17-9cf7-82bbe369ccd3" />
 
 ---
