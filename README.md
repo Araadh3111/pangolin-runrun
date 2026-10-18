@@ -5,7 +5,27 @@ A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* game
 Build ure speed up collect buffs along the way defeat the tigers, collect ants and move up the levels by collecting gems
 
 ---
+## Image Section
 
+### Start Menu
+<img width="1147" height="657" alt="image" src="https://github.com/user-attachments/assets/3339fc89-bc17-4838-ab65-28b7855c9e43" />
+
+### Desert (1st level)
+<img width="1161" height="658" alt="image" src="https://github.com/user-attachments/assets/2ccbd5f9-0856-496b-87e7-4dbb1a8043a7" />
+<img width="1172" height="656" alt="image" src="https://github.com/user-attachments/assets/20c8a99e-2674-48ba-b562-8dafd28aaea7" />
+<img width="1145" height="665" alt="image" src="https://github.com/user-attachments/assets/c5bbee0a-ea40-4eb6-b2dc-fdedc3e44951" />
+<img width="1187" height="665" alt="image" src="https://github.com/user-attachments/assets/42d2259a-a165-4e8d-ab2d-7c9039f147b8" />
+
+
+### Tunnel (2nd Level)(very hard)
+<img width="1160" height="646" alt="image" src="https://github.com/user-attachments/assets/65bc7c9a-2b62-4eaa-ae38-28cdb602a20c" />
+<img width="1158" height="647" alt="image" src="https://github.com/user-attachments/assets/6de344d0-b5b2-43ae-ba69-6417978812ba" />
+<img width="1197" height="662" alt="image" src="https://github.com/user-attachments/assets/cb752f0c-fa25-48c0-8644-2034661bf64c" />
+
+<img width="1172" height="667" alt="image" src="https://github.com/user-attachments/assets/32ef4da5-1a01-4068-9387-8572f68fd55b" />
+
+
+---
 ## Gameplay
 
 | Element | What it does |
@@ -34,7 +54,7 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 
 ## Running the project
 
-1. Install **Godot 4.7** or newer, the standard (non- ,NET) build. The project was saved with the `4.7` / Forward+ feature set.
+1. Install **Godot 4.77** or newer,.The project was saved with the `4.7` / Forward+ feature set.
 2. Clone the repo:
    ```bash
    git clone https://github.com/Araadh3111/pangolin-runrun.git
@@ -95,7 +115,7 @@ This Game Will be released on itch.io very soon and we will add new features adn
 | `FALL_LIMIT` | 1200 |
 | `BALL_RADIUS` | 36 |
 
-Tiger patrol speed is 200 (`tiger.gd`).
+Tiger patrol speed is 250 (`tiger.gd`).
 
 
 ## Credits 

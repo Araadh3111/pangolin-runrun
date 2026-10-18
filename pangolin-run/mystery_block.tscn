@@ -10,7 +10,7 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_lrn7f"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("2_hqu3g")
 }, {
 "duration": 1.0,

@@ -1,8 +1,11 @@
 extends Control
 
+extends Control
+
 const TITLE_FONT = "res://Assets/Images/Tiles/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf-fe5c14b20e62db767ede6d5f37f39902.fontdata"
 const UI_FONT = "res://Assets(SIDDAK)/fonts/PixelOperator8-Bold.ttf"
 
+var starting = false
 var t = 0.0
 var screen: Vector2
 var ground_y: float
@@ -131,6 +134,11 @@ func _process(delta):
 	tiger.position.x = screen.x * 0.08 + sin(t) * 40
 	title.position.y = 50 + sin(t * 2.5) * 8
 
+	if not starting and not busy and Input.is_action_just_pressed("jump"):
+		starting = true
+		tap.play()
+		go("res://main.tscn")
+
 
 func make_anim(path, rects, fps):
 	var frames = SpriteFrames.new()
@@ -174,3 +182,4 @@ func go(path):
 		tw.tween_callback(get_tree().quit)
 	else:
 		tw.tween_callback(get_tree().change_scene_to_file.bind(path))
+
