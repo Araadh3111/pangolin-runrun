@@ -2,10 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://cswynlpcvh3hf" path="res://player.tscn" id="1_ig7tw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(2000, 50)
+
 [node name="Main" type="Node2D" unique_id=312245494]
 
 [node name="Player" parent="." unique_id=1267910415 instance=ExtResource("1_ig7tw")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1206363516]
+position = Vector2(0, 250)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1720749075]
+shape = SubResource("RectangleShape2D_0xm2m")
