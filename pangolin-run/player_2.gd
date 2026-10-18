@@ -29,8 +29,6 @@ func _physics_process(delta):
 	else:
 		animated_sprite.play("jump")
 	
-	
-	
 	if direction:
 		velocity.x = direction * SPEED
 	else:
