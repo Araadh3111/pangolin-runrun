@@ -1,7 +1,5 @@
 extends Control
 
-extends Control
-
 const TITLE_FONT = "res://Assets/Images/Tiles/BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf-fe5c14b20e62db767ede6d5f37f39902.fontdata"
 const UI_FONT = "res://Assets(SIDDAK)/fonts/PixelOperator8-Bold.ttf"
 
@@ -182,4 +180,3 @@ func go(path):
 		tw.tween_callback(get_tree().quit)
 	else:
 		tw.tween_callback(get_tree().change_scene_to_file.bind(path))
-
