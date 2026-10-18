@@ -9,7 +9,7 @@ var sprite_start_y = 0.0
 
 func _ready() -> void:
 	sprite_start_y = $Sprite2D.position.y
-	$Sprite2D.play("default")
+	
 	$BumpZone.body_entered.connect(_on_bump_zone_body_entered)
 
 
@@ -20,8 +20,7 @@ func _on_bump_zone_body_entered(body: Node2D) -> void:
 
 	# Grey out and stop the shimmer animation
 	$Sprite2D.modulate = Color(0.5, 0.5, 0.5)
-	$Sprite2D.stop()
-	$Sprite2D.frame = 0
+	$Sprite2D.play("default")
 
 	# Bonk
 	var bonk = create_tween()
