@@ -34,7 +34,7 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 
 ## Running the project
 
-1. Install **Godot 4.7** or newer, the standard (non- ,NET) build. The project was saved with the `4.7` / Forward+ feature set.
+1. Install **Godot 4.77** or newer,.The project was saved with the `4.7` / Forward+ feature set.
 2. Clone the repo:
    ```bash
    git clone https://github.com/Araadh3111/pangolin-runrun.git
@@ -95,7 +95,7 @@ This Game Will be released on itch.io very soon and we will add new features adn
 | `FALL_LIMIT` | 1200 |
 | `BALL_RADIUS` | 36 |
 
-Tiger patrol speed is 200 (`tiger.gd`).
+Tiger patrol speed is 250 (`tiger.gd`).
 
 
 ## Credits 
