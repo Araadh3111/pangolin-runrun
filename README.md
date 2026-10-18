@@ -8,7 +8,8 @@ Build your speed up by collecting buffs along the way to defeat the tigers, coll
 ## Image Section
 
 ### Start Menu
-<img width="1147" height="657" alt="image" src="https://github.com/user-attachments/assets/3339fc89-bc17-4838-ab65-28b7855c9e43" />
+<img width="1917" height="1198" alt="Screenshot 2026-10-19 045302" src="https://github.com/user-attachments/assets/7eab2dd4-a896-47ee-956a-f576651d91f6" />
+
 
 ### Desert (1st level)
 <img width="1161" height="658" alt="image" src="https://github.com/user-attachments/assets/2ccbd5f9-0856-496b-87e7-4dbb1a8043a7" />
