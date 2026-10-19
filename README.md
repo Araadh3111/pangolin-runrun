@@ -4,7 +4,7 @@ A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* game
 
 Build your speed up by collecting buffs along the way to defeat the tigers, collect ants and move up the levels by collecting gems!
 
-There are 3 Levels summed up first is a gentle opener at the deset, second is inside the tunnels(scary) and is followed by a very beautiful 3rd level at cherry blossoms
+There are 3 Levels summed up first is a gentle opener at the desert, second is inside the tunnels(scary) and is followed by a very beautiful 3rd level at cherry blossoms!
 
 ---
 ## Image Section
@@ -40,7 +40,7 @@ There are 3 Levels summed up first is a gentle opener at the deset, second is in
 
 ---
 ## How To Start Playing
-go to **https://araadh311.itch.io/pangolin-run** and then donwload the exe file only as the pck is embedded into it and start playing and having fun!
+go to **https://araadh311.itch.io/pangolin-run** and then download the .exe file only as the .pck is embedded into it and start playing and having fun!
 
 
 ---
@@ -156,7 +156,7 @@ go to **https://araadh311.itch.io/pangolin-run** and then donwload the exe file 
 ```
 
 ## Updates
-This Game Will be released on itch.io very soon and we will add new features adn finish it 
+This Game Will be released on itch.io very soon and we will add new features and finish it 
 
 ### Movement tuning (`player.gd`)
 
@@ -181,7 +181,7 @@ Tiger patrol speed is 200 (`tiger.gd`).
 Brackeys' Platformer asset bundle
 - **Pangolin, rolling-ball and tiger sprites:** Rishu, Siddak (Aseprite)
 - **Engine:** [Godot Engine](https://godotengine.org)
-- **Extra Credits:** Rishu the greatest guy for making assets so good
+- **Extra Credits:** Rishu the greatest guy for making assets so good(hehe)
 
 ## License
 
