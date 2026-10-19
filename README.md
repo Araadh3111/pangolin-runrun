@@ -1,14 +1,19 @@
 # Pangolin run
 
-A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* games, except the hero is a **pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
+A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* games, except the hero is a **Pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
 
-Build ure speed up collect buffs along the way defeat the tigers, collect ants and move up the levels by collecting gems
+Build your speed up by collecting buffs along the way to defeat the tigers, collect ants and move up the levels by collecting gems!
 
 ---
 ## Image Section
 
 ### Start Menu
-<img width="1147" height="657" alt="image" src="https://github.com/user-attachments/assets/3339fc89-bc17-4838-ab65-28b7855c9e43" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 22 AM" src="https://github.com/user-attachments/assets/46eb7d60-9692-445a-9f67-084435e53a71" />
+
+
+### Pause Menu
+<img width="1917" height="1198" alt="Screenshot 2026-10-19 045312" src="https://github.com/user-attachments/assets/4c86cce3-5fe1-4b49-aadd-df2044d4d8be" />
+
 
 ### Desert (1st level)
 <img width="1161" height="658" alt="image" src="https://github.com/user-attachments/assets/2ccbd5f9-0856-496b-87e7-4dbb1a8043a7" />
@@ -24,6 +29,12 @@ Build ure speed up collect buffs along the way defeat the tigers, collect ants a
 
 <img width="1172" height="667" alt="image" src="https://github.com/user-attachments/assets/32ef4da5-1a01-4068-9387-8572f68fd55b" />
 
+### Cherry Blossom (3rd Level)(Extremely hard)
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 27 AM" src="https://github.com/user-attachments/assets/205c2415-dffd-42e2-8f62-250a01fed0e0" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 56 AM" src="https://github.com/user-attachments/assets/7f58f151-c507-4ed7-b408-17c631391497" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 57 58 AM" src="https://github.com/user-attachments/assets/e35bba9d-078f-40a5-9f0d-15377b15a61a" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 5 03 53 AM" src="https://github.com/user-attachments/assets/a3ba6792-9f53-4209-8ca4-c8440e345b6f" />
+<img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 58 28 AM" src="https://github.com/user-attachments/assets/9364d71a-1733-4b17-9cf7-82bbe369ccd3" />
 
 ---
 ## Gameplay
@@ -50,7 +61,57 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 | Sprint | `Shift` |
 | Restart (after winning) | `R` |
 
+--- 
+
+## Menus
+
+### Start screen
+The game now opens on an animated title screen (`start_screen.tscn`, the main scene). The desert scrolls in the background while the pangolin runs and a tiger chases her. Music fades in when it loads.
+
+| Button | What it does |
+| --- | --- |
+| **PLAY** | Starts Level 1 (Desert) |
+| **LEVEL 2** | Jumps straight to Level 2 (Tunnel) |
+| **QUIT** | Closes the game |
+
+Pressing `Space` on the title screen also starts Level 1.
+
+### Pause menu
+Press `Esc` during Level 1 to pause.
+
+| Button | What it does |
+| --- | --- |
+| **Resume** | Back to the game |
+| **Restart** | Restarts the level |
+| **Title** | Goes back to the start screen |
+| **Quit** | Closes the game |
+
 ---
+
+## Levels
+
+| Level | Scene | What's in it |
+| --- | --- | --- |
+| **1 - Desert** | `main.tscn` | 5 tigers, 4 ants, 1 mystery block |
+| **2 - Tunnel** | `level_2.tscn` | 6 tigers, 4 ants, 2 mystery blocks, new tunnel background and tiles |
+
+Reaching the goal in Level 1 shows **"Level Complete!"** and moves you to Level 2 after 2 seconds. Beating Level 2 shows **"You Win!"**, and pressing `R` takes you back to the title screen.
+
+---
+
+## Sound
+
+- Jump, ant pickup, power-up and level-complete sounds (`Assets/Audio/`)
+- Background music and button sounds on the start screen
+
+---
+
+## Animation
+
+- The pangolin has a 3-frame walk cycle and stops animating when standing still
+- Tigers have a 3-frame walk cycle
+- Mystery blocks shimmer until you hit them
+- Ants use a custom pixel-art sprite (`Assets(rishu)/Separate/Ant/ant1.png`)
 
 ## Running the project
 
