@@ -40,7 +40,7 @@ There are 3 Levels summed up first is a gentle opener at the deset, second is in
 
 ---
 ## How To Start Playing
-go to https://araadh311.itch.io/pangolin-run and then donwload the exe file only as the pck is embedded into it and start playing and having fun!
+go to **https://araadh311.itch.io/pangolin-run** and then donwload the exe file only as the pck is embedded into it and start playing and having fun!
 
 
 ---
@@ -72,13 +72,7 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 
 
 ### Start screen
-The game now opens on an animated title screen (`start_screen.tscn`, the main scene). The desert scrolls in the background while the pangolin runs and a tiger chases her. Music fades in when it loads.
-
-| Button | What it does |
-| --- | --- |
-| **PLAY** | Starts Level 1 (Desert) |
-| **LEVEL 2** | Jumps straight to Level 2 (Tunnel) |
-| **QUIT** | Closes the game |
+The game now opens on an animated title screen (`start_screen.tscn`, the main scene). The desert scrolls in the background while the pangolin runs and a tiger chases her. Music fades in when it loads also it contains 4 optionsin total "Play" takes you to the first level, "level 2" to the second, "level 3" to the 3rd, and "Quit" exits the game abruptly :(
 
 Pressing `Space` on the title screen also starts Level 1.
 
@@ -100,7 +94,7 @@ Press `Esc` during Level 1 to pause.
 | --- | --- | --- |
 | **1 - Desert** | `main.tscn` | 5 tigers, 4 ants, 1 mystery block |
 | **2 - Tunnel** | `level_2.tscn` | 6 tigers, 4 ants, 2 mystery blocks, new tunnel background and tiles |
-
+| **3 - Cherry Blossom** | `level_3.tscn` | A lot of new things and great art style |
 Reaching the goal in Level 1 shows **"Level Complete!"** and moves you to Level 2 after 2 seconds. Beating Level 2 shows **"You Win!"**, and pressing `R` takes you back to the title screen.
 
 ---
@@ -120,14 +114,8 @@ Reaching the goal in Level 1 shows **"Level Complete!"** and moves you to Level 
 - Ants use a custom pixel-art sprite (`Assets(rishu)/Separate/Ant/ant1.png`)
 
 ## Running the project
+go to **https://araadh311.itch.io/pangolin-run** and then donwload the exe file only as the pck is embedded into it and start playing and having fun!
 
-1. Install **Godot 4.77** or newer,.The project was saved with the `4.7` / Forward+ feature set.
-2. Clone the repo:
-   ```bash
-   git clone https://github.com/Araadh3111/pangolin-runrun.git
-   ```
-3. Open Godot → **Import** → choose `pangolin-runrun/pangolin-run/project.godot`.
-4. Press **F5**. The main scene is `main.tscn`.
 
 ---
 
