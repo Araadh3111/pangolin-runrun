@@ -1,8 +1,10 @@
 # Pangolin run
 
-A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* games, except the hero is a **Pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
+A fast 2D level game built in **Godot 4**, in the spirit of classic *Mario* game, except the hero is a **Pangolin**(ancient cool animal that curls) running to save her long-lost love(lol).
 
 Build your speed up by collecting buffs along the way to defeat the tigers, collect ants and move up the levels by collecting gems!
+
+There are 3 Levels summed up first is a gentle opener at the deset, second is inside the tunnels(scary) and is followed by a very beautiful 3rd level at cherry blossoms
 
 ---
 ## Image Section
@@ -180,7 +182,7 @@ This Game Will be released on itch.io very soon and we will add new features adn
 | `FALL_LIMIT` | 1200 |
 | `BALL_RADIUS` | 36 |
 
-Tiger patrol speed is 250 (`tiger.gd`).
+Tiger patrol speed is 200 (`tiger.gd`).
 
 
 ## Credits 
@@ -191,6 +193,7 @@ Tiger patrol speed is 250 (`tiger.gd`).
 Brackeys' Platformer asset bundle
 - **Pangolin, rolling-ball and tiger sprites:** Rishu, Siddak (Aseprite)
 - **Engine:** [Godot Engine](https://godotengine.org)
+- **Extra Credits:** Rishu the greatest guy for making assets so good
 
 ## License
 
