@@ -37,6 +37,11 @@ Build your speed up by collecting buffs along the way to defeat the tigers, coll
 <img width="1440" height="900" alt="Screenshot 2026-10-19 at 4 58 28 AM" src="https://github.com/user-attachments/assets/9364d71a-1733-4b17-9cf7-82bbe369ccd3" />
 
 ---
+## How To Start Playing
+go to https://araadh311.itch.io/pangolin-run and then donwload the exe file only as the pck is embedded into it and start playing and having fun!
+
+
+---
 ## Gameplay
 
 | Element | What it does |
@@ -63,7 +68,6 @@ The main level (`main.tscn`) is about 6,500 px wide. It has a parallax backgroun
 
 --- 
 
-## Menus
 
 ### Start screen
 The game now opens on an animated title screen (`start_screen.tscn`, the main scene). The desert scrolls in the background while the pangolin runs and a tiger chases her. Music fades in when it loads.
@@ -162,7 +166,7 @@ Reaching the goal in Level 1 shows **"Level Complete!"** and moves you to Level 
 ```
 
 ## Updates
-This Game Will be released on itch.io very soon and we will add new features adn finish it
+This Game Will be released on itch.io very soon and we will add new features adn finish it 
 
 ### Movement tuning (`player.gd`)
 
